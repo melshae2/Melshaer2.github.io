@@ -1,54 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Mohammad Elshaer | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    :root { --bg:#fafafa; --card:#fff; --ink:#111; --link:#0366d6; }
+    :root { --bg:#fafafa; --card:#fff; --ink:#111; --muted:#555; --link:#0366d6; }
     * { box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; margin: 40px; background: var(--bg); color: var(--ink); }
-    h1 { text-align: center; margin-bottom: 24px; }
+    body { font-family: Arial, sans-serif; margin: 32px; background: var(--bg); color: var(--ink); }
     .container { max-width: 1100px; margin: 0 auto; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-    .card { background: var(--card); padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,.1); transition: transform .1s ease; }
+    header { text-align: center; margin-bottom: 28px; }
+    header h1 { margin: 0 0 6px; }
+    header p { margin: 0; color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .card { background: var(--card); padding: 16px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,.08); transition: transform .12s ease; }
     .card:hover { transform: translateY(-2px); }
-    .card img { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; background: #e9e9e9; }
-    .card h2 { margin: 12px 0 6px; font-size: 1.1rem; }
-    .card p { margin: 0 0 10px; }
-    .card a { color: var(--link); text-decoration: none; }
-    .actions a { margin-right: 12px; }
+    .thumb { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; background: #e9e9e9; }
+    .title { margin: 10px 0 4px; font-size: 1.05rem; }
+    .desc { margin: 0 0 10px; color: var(--muted); font-size: .95rem; }
+    .actions a { color: var(--link); text-decoration: none; margin-right: 12px; font-size: .95rem; }
+    footer { text-align: center; margin-top: 32px; color: var(--muted); font-size: .9rem; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>My Projects</h1>
+    <header>
+      <h1>My Projects</h1>
+      <p>Cloud, serverless, and automation work</p>
+    </header>
 
     <div class="grid">
-      <!-- Project 1: Notes API -->
+      <!-- Project 1 -->
       <div class="card">
-        <img src="screenshot1.png" alt="Notes API screenshot" />
-        <h2>Notes API</h2>
-        <p>Serverless CRUD with AWS Lambda, API Gateway, and DynamoDB.</p>
+        <img class="thumb" src="portfolio1.png" alt="Notes API screenshot" />
+        <div class="title">Notes API</div>
+        <p class="desc">Serverless CRUD with AWS Lambda, API Gateway, and DynamoDB.</p>
         <div class="actions">
-          <a href="notes-api.html">View Project Details</a>
-          <a href="https://github.com/melshae2/notes-api">GitHub Repo</a>
+          <a href="notes-api.html">View Project</a>
+          <a href="https://github.com/melshae2/notes-api">GitHub</a>
         </div>
       </div>
 
-      <!-- Project 2 placeholder (edit as you add more) -->
+      <!-- Project 2 -->
       <div class="card">
-        <img src="screenshot2.png" alt="Project 2 screenshot" />
-        <h2>Cloud Dashboard</h2>
-        <p>Raspberry Pi dashboard for IT operations (placeholder text).</p>
+        <img class="thumb" src="portfolio2.png" alt="Project 2 screenshot" />
+        <div class="title">Project 2</div>
+        <p class="desc">Short one-line description of what it does.</p>
         <div class="actions">
-          <a href="project2.html">View Project Details</a>
-          <a href="https://github.com/melshae2/project2">GitHub Repo</a>
+          <a href="project2.html">View Project</a>
+          <a href="https://github.com/melshae2/project2">GitHub</a>
         </div>
       </div>
 
-      <!-- Copy this block for projects 3–5 and update filenames/links -->
+      <!-- Project 3 -->
+      <div class="card">
+        <img class="thumb" src="portfolio3.png" alt="Project 3 screenshot" />
+        <div class="title">Project 3</div>
+        <p class="desc">Short one-line description of what it does.</p>
+        <div class="actions">
+          <a href="project3.html">View Project</a>
+          <a href="https://github.com/melshae2/project3">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="card">
+        <img class="thumb" src="portfolio4.png" alt="Project 4 screenshot" />
+        <div class="title">Project 4</div>
+        <p class="desc">Short one-line description of what it does.</p>
+        <div class="actions">
+          <a href="project4.html">View Project</a>
+          <a href="https://github.com/melshae2/project4">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="card">
+        <img class="thumb" src="portfolio5.png" alt="Project 5 screenshot" />
+        <div class="title">Project 5</div>
+        <p class="desc">Short one-line description of what it does.</p>
+        <div class="actions">
+          <a href="project5.html">View Project</a>
+          <a href="https://github.com/melshae2/project5">GitHub</a>
+        </div>
+      </div>
     </div>
+
+    <footer>© Mohammad Elshaer</footer>
   </div>
 </body>
 </html>
