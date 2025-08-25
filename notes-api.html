@@ -22,7 +22,67 @@
     <h2>Architecture</h2>
     <img src="diagram.png" alt="Architecture Diagram">
 
+    <h2>Screenshots</h2><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notes API | Mohammad Elshaer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 32px; line-height: 1.6; color:#111; }
+    .container { max-width: 900px; margin: auto; }
+    h1 { text-align: center; margin-bottom: 6px; }
+    .sub { text-align:center; color:#555; margin-top:0; }
+    img { max-width: 100%; border-radius: 8px; margin: 14px 0; }
+    a { color:#0366d6; text-decoration: none; }
+    .pill { display:inline-block; padding:6px 10px; border:1px solid #e0e0e0; border-radius:999px; margin:4px 6px 0 0; font-size:.9rem; color:#333; }
+    .nav { margin-top: 18px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Notes API</h1>
+    <p class="sub"><strong>Tech Stack:</strong>
+      <span class="pill">AWS Lambda</span>
+      <span class="pill">API Gateway</span>
+      <span class="pill">DynamoDB</span>
+      <span class="pill">Python</span>
+    </p>
+
+    <h2>Overview</h2>
+    <p>
+      A serverless REST API that supports create, read, update, and delete operations for notes.
+      API Gateway handles routing/auth, Lambda executes business logic, and DynamoDB stores notes.
+      Designed to be low-cost, scalable, and easy to extend.
+    </p>
+
+    <h2>Architecture</h2>
+    <img src="diagram.png" alt="Notes API architecture diagram">
+
     <h2>Screenshots</h2>
+    <img src="portfolio1.png" alt="Screenshot 1: API invocation">
+    <img src="portfolio2.png" alt="Screenshot 2: Successful response">
+    <img src="portfolio3.png" alt="Screenshot 3: DynamoDB items">
+    <img src="portfolio4.png" alt="Screenshot 4: Update/Delete flow">
+    <img src="portfolio5.png" alt="Screenshot 5: Error handling example">
+
+    <h2>Key Features</h2>
+    <ul>
+      <li>Serverless CRUD with AWS Lambda</li>
+      <li>Secure, versioned endpoints via API Gateway</li>
+      <li>DynamoDB single-table design for fast reads/writes</li>
+      <li>Low cost and scales to zero when idle</li>
+    </ul>
+
+    <div class="nav">
+      <a href="https://github.com/melshae2/notes-api">View GitHub Repo</a> ·
+      <a href="index.html">⬅ Back to Portfolio</a>
+    </div>
+  </div>
+</body>
+</html>
+
     <img src="screenshot1.png" alt="Notes API Screenshot 1">
     <img src="screenshot2.png" alt="Notes API Screenshot 2">
 
